@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Joel Marzullo — Game Engine</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">Intro</a></li>
+							<li><a href="#one">Engine Features</a></li>
+							<li><a href="#two">Technologies</a></li>
+							<li><a href="#three">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<h1>A2 Game Engine</h1>
+							<p>A custom 2D game engine built from scratch in C++ with Lua scripting, SDL2 rendering,<br />
+							Box2D physics, and Xbox controller support with live button remapping.<br />
+							Built by <strong>Joel Marzullo</strong> — University of Michigan EECS 498.</p>
+							<ul class="actions">
+								<li><a href="#one" class="button scrolly">See Features</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- One -->
+					<section id="one" class="wrapper style2 spotlights">
+						<section>
+							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Controller Support</h2>
+									<p>Full Xbox controller support via SDL2 GameController API. Buttons, analog sticks, and triggers are all exposed to Lua scripts via LuaBridge bindings. Players can remap any action to any button through an in-game pause menu — no engine restart required.</p>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Lua Scripting</h2>
+									<p>Game logic is fully scriptable in Lua via LuaBridge. Every actor in the scene can have components — Lua tables that implement OnStart, OnUpdate, and OnDestroy lifecycle hooks. The engine exposes Actor, Input, Audio, Image, Camera, Controller, and Scene namespaces to Lua.</p>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Box2D Physics</h2>
+									<p>Integrated Box2D middleware for rigid body physics, collision detection, and raycasting. Physics components are created and managed through Lua, with an EventBus system for collision callbacks and deferred component removal to avoid mid-update invalidation.</p>
+								</div>
+							</div>
+						</section>
+					</section>
+
+				<!-- Two -->
+					<section id="two" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>Technologies</h2>
+							<p>Built over 10 weeks of EECS 498 — Game Engine Architecture. Every system from rendering to scripting to physics was implemented from scratch on top of industry-standard libraries.</p>
+							<div class="features">
+								<section>
+									<span class="icon solid major fa-code"></span>
+									<h3>C++</h3>
+									<p>Core engine written in modern C++17. Actor/component architecture, deferred destruction, template caching, and spatial hashing for large scenes.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-scroll"></span>
+									<h3>Lua + LuaBridge</h3>
+									<p>Game logic fully scriptable in Lua. LuaBridge exposes C++ functions and classes to Lua with automatic type conversion and inheritance support.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-gamepad"></span>
+									<h3>SDL2</h3>
+									<p>Windowing, rendering, audio, input, and controller support. SDL_GameController API powers the Xbox controller feature with hot-plug detection.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-atom"></span>
+									<h3>Box2D</h3>
+									<p>Rigid body physics, collision detection, raycasting, and contact callbacks. Integrated via an EventBus system with deferred component removal.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-cube"></span>
+									<h3>GLM</h3>
+									<p>Math library for vectors and transforms. glm::vec2 exposed directly to Lua for position and force calculations.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-file-code"></span>
+									<h3>RapidJSON</h3>
+									<p>Fast JSON parsing for scene files, actor templates, and game config. Template document caching reduces repeated disk reads.</p>
+								</section>
+							</div>
+						</div>
+					</section>
+
+				<!-- Three -->
+					<section id="three" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>Demo & Contact</h2>
+							<p>Watch the engine in action below, or reach out via email or GitHub.</p>
+							<div class="split style1">
+								<section>
+									<h3>Demo Video</h3>
+									<p><!-- Paste your YouTube embed here once you have the link -->
+									<em>Video coming soon — check back after submission.</em></p>
+									<p><a href="https://github.com/Jmartzz/game_engine_404" class="button">View Source on GitHub</a></p>
+								</section>
+								<section>
+									<ul class="contact">
+										<li>
+											<h3>Email</h3>
+											<a href="mailto:joelmarz@umich.edu">joelmarz@umich.edu</a>
+										</li>
+										<li>
+											<h3>University</h3>
+											<span>University of Michigan<br />EECS 498 — Game Engine Architecture</span>
+										</li>
+										<li>
+											<h3>GitHub</h3>
+											<ul class="icons">
+												<li><a href="https://github.com/Jmartzz" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Joel Marzullo 2026</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
